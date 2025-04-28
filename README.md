@@ -18,6 +18,8 @@ It integrates **vector** and **raster** datasets using **GeoServer** and offers 
 🎯 **Objective**  
 To build a user-friendly platform that brings **geospatial intelligence** to the web, enabling users to explore spatial data interactively for better decision-making and analysis.
 
-📷 **Screenshots**  
-![Uploading Screenshot 2025-04-28 165529.png…]()
+## 📷 Screenshots
+
+### Interactive Map View
+![Map View](screenshot1.png)
 
