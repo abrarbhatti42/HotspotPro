@@ -21,5 +21,5 @@ To build a user-friendly platform that brings **geospatial intelligence** to the
 ## 📷 Screenshots
 
 ### Interactive Map View
-![Map View](screenshot1.png)
+![Map View](Screenshot.png)
 
