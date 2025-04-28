@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home - HotSpotPro</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./src/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="dark:bg-gray-700 dark:text-white flex flex-col min-h-screen">
+    
+   <!-- Navbar -->
+   <nav class="bg-white border-gray-200 md:dark:bg-black">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./images/logo.png" class="h-8 rounded-full" alt="pro" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HotSpotPro</span>
+      </a>
+
+      <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+            <span class="sr-only">Open user menu</span>
+            <img class="w-8 h-8 rounded-full" src="./images/leader4.jpg" alt="user photo">
+          </button>
+      </div>
+
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black">
+            <li>
+              <a href="./index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-gray-600" >Home</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">contact us</a>
+            </li>
+            <li>
+              <a href="./about.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">about</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Main Content (flex-grow makes it expand to push footer down) -->
+<main class="flex-grow">
+    
+    <!-- Hero Section -->
+    <!-- Background Wrapper for Hero + Features -->
+<div class="relative overflow-hidden">
+    <!-- Animated Background -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none"
+         style="background-image: url('./images/home_bg2.gif');">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center text-center py-20 px-6 z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Analyze Geographic Patterns with HotSpotPro</h1>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-4">
+            Perform hotspot analysis, point pattern analysis, and more with advanced GIS techniques.
+        </p>
+        <a href="./hotSpot.html" class="dark:bg-black  hover:bg-gray-800 text-white py-3 px-6 rounded-lg text-lg">
+            Get Started
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="relative grid md:grid-cols-3 gap-6 px-6 py-12 -mt-6 z-10">
+        <!-- Feature Card 1 -->
+        <div class="p-6 bg-white dark:bg-black shadow-lg rounded-lg text-center">
+            <img src="./images/hotspot.png" alt="Hotspot Analysis" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-xl font-semibold">Hotspot Analysis</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">
+                Detect clusters of high and low spatial activity.
+            </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="p-6 bg-white dark:bg-black shadow-lg rounded-lg text-center">
+            <img src="./images/lst_ndvi.png" alt="LST & NDVI Correlation" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-xl font-semibold">NDVI & LST</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">
+                Analyze temperature and vegetation index relationships.
+            </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="p-6 bg-white dark:bg-black  shadow-lg rounded-lg text-center">
+            <img src="./images/correlation_100m.png" alt="Point Pattern Analysis" class="w-full h-40 object-cover rounded-md mb-4">
+            <h3 class="text-xl font-semibold">Correlation graphs</h3>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">
+                Identify spatial distributions using advanced images.
+            </p>
+        </div>
+    </section>
+</div>
+</main>
+
+    <!-- Footer (Fixed to bottom) -->
+    <footer class="md:dark:bg-black text-white text-center p-4 w-full">
+        <p>&copy; 2025 HotSpotPro. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
